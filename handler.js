@@ -41,10 +41,10 @@ module.exports.contact = async (event) => {
 
   const contactObj = {
     api_key: message.key,
-    id_contact_data: "test",
+    id_contact_data: randomNumber(1, 100000),
     id_load: message.load.id_load,
     id_flow: message.load.id_flow,
-    id_item: "test",
+    id_item: `${randomNumber(1, 100000)}`,
     schedule: new Date(),
     contact: [
       {
