@@ -63,5 +63,5 @@ module.exports.contact = async (event) => {
     escape: escapeArr,
   };
 
-  orchybase.createQueueContact(contactObj);
+  await orchybase.createQueueContact(contactObj);
 };
